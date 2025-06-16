@@ -1530,6 +1530,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"roland-vr400uhd@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "roland-vr400uhd@workspace:."
+  dependencies:
+    "@companion-module/base": "npm:~1.11.3"
+    "@companion-module/tools": "npm:^2.3.0"
+    prettier: "npm:^3.5.3"
+  languageName: unknown
+  linkType: soft
+
 "run-parallel@npm:^1.1.9":
   version: 1.2.0
   resolution: "run-parallel@npm:1.2.0"
@@ -1890,16 +1900,6 @@ __metadata:
   checksum: 10c0/5762caa3d0b421f4bdb7a1926b2ae2189fc6e4a14469258f183600028eb16db3e9e0306f46e8ebf5a52ff4b81a881f22637afefbef5399d6ad440824e9b27f9f
   languageName: node
   linkType: hard
-
-"your-module-name@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "your-module-name@workspace:."
-  dependencies:
-    "@companion-module/base": "npm:~1.11.3"
-    "@companion-module/tools": "npm:^2.3.0"
-    prettier: "npm:^3.5.3"
-  languageName: unknown
-  linkType: soft
 
 "zx@npm:^8.3.2":
   version: 8.5.5

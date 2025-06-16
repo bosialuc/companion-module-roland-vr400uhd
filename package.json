@@ -1,5 +1,5 @@
 {
-	"name": "your-module-name",
+	"name": "roland-vr400uhd",
 	"version": "0.1.0",
 	"type": "module",
 	"main": "main.js",
@@ -10,7 +10,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-your-module-name.git"
+		"url": "git+https://github.com/bitfocus/companion-module-roland-vr400uhd.git"
 	},
 	"dependencies": {
 		"@companion-module/base": "~1.11.3"
