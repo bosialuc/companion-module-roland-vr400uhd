@@ -1,3 +1,3 @@
-## Roland VR-400UHD Module
+## Your module
 
-TODO
+Write some help for your users here!

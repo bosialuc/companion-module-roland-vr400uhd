@@ -3,7 +3,7 @@
 	"name": "roland-vr400uhd",
 	"shortname": "roland-vr400uhd",
 	"description": "A companion module for the ROLAND VR-400UHD 4k Mixer",
-	"version": "0.0.1",
+	"version": "0.0.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/bosialuc/companion-module-roland-vr400uhd.git",
 	"bugs": "https://github.com/bosialuc/companion-module-roland-vr400uhd/issues",
@@ -19,7 +19,7 @@
 		"entrypoint": "../main.js"
 	},
 	"legacyIds": [],
-	"manufacturer": "Roland",
+	"manufacturer": "Roland-dev",
 	"products": ["Roland VR-400UHD"],
 	"keywords": ["Roland", "VR-400"]
 }
