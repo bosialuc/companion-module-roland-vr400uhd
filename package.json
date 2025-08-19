@@ -1,6 +1,6 @@
 {
-	"name": "roland-vr400uhd",
-	"version": "0.1.0",
+	"name": "companion-module-roland-vr400uhd",
+	"version": "0.1.1",
 	"type": "module",
 	"main": "main.js",
 	"scripts": {
@@ -10,7 +10,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bitfocus/companion-module-roland-vr400uhd.git"
+		"url": "git+https://github.com/bosialuc/companion-module-roland-vr400uhd.git"
 	},
 	"dependencies": {
 		"@companion-module/base": "~1.11.3"

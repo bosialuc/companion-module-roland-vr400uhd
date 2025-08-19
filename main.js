@@ -59,6 +59,10 @@ class ModuleInstance extends InstanceBase {
 	}
 
 	createConnection() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f38d6b (version 0.1.2)
 		if(this.socket){
 			//Destroying old connection
 			this.socket.destroy()
@@ -72,6 +76,10 @@ class ModuleInstance extends InstanceBase {
 
 		//Creating new connection
 		if(this.config.host){
+<<<<<<< HEAD
+=======
+			
+>>>>>>> 1f38d6b (version 0.1.2)
 			this.socket = new TCPHelper(this.config.host, this.config.port, {reconnect: true})
 
 			this.socket.on('status_change', (status, message) => {
@@ -80,6 +88,10 @@ class ModuleInstance extends InstanceBase {
 			})
 
 			this.socket.on('data', (data) => {
+<<<<<<< HEAD
+=======
+				this.setVariableValues({ mixer_response: data.toString() })
+>>>>>>> 1f38d6b (version 0.1.2)
 				let received = data.toString()
 				if(this.loggedIn == false){
 					if(received.includes("Enter")){
@@ -97,6 +109,10 @@ class ModuleInstance extends InstanceBase {
 					}
 					else if(received.includes("Welcome")){
 						this.updateStatus(InstanceStatus.Ok, "Logged in successfully")
+<<<<<<< HEAD
+=======
+						this.log('info', 'Logged in successfully')
+>>>>>>> 1f38d6b (version 0.1.2)
 						this.loggedIn = true
 					}
 				} else {

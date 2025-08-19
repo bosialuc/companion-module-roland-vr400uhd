@@ -19,7 +19,19 @@
 		"entrypoint": "../main.js"
 	},
 	"legacyIds": [],
+<<<<<<< HEAD
 	"manufacturer": "Roland-dev",
 	"products": ["Roland VR-400UHD"],
 	"keywords": ["Roland", "VR-400"]
 }
+=======
+	"manufacturer": "Roland",
+	"products": [
+		"VR-400UHD"
+	],
+	"keywords": [
+		"Roland",
+		"VR-400"
+	]
+}
+>>>>>>> 1f38d6b (version 0.1.2)
