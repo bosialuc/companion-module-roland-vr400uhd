@@ -59,11 +59,7 @@ class ModuleInstance extends InstanceBase {
 	}
 
 	createConnection() {
-<<<<<<< HEAD
-=======
-
->>>>>>> 1f38d6b (version 0.1.2)
-		if(this.socket){
+		if (this.socket) {
 			//Destroying old connection
 			this.socket.destroy()
 			delete this.socket
@@ -75,12 +71,8 @@ class ModuleInstance extends InstanceBase {
 		this.updateStatus(InstanceStatus.Connecting)
 
 		//Creating new connection
-		if(this.config.host){
-<<<<<<< HEAD
-=======
-			
->>>>>>> 1f38d6b (version 0.1.2)
-			this.socket = new TCPHelper(this.config.host, this.config.port, {reconnect: true})
+		if (this.config.host) {
+			this.socket = new TCPHelper(this.config.host, this.config.port, { reconnect: true })
 
 			this.socket.on('status_change', (status, message) => {
 				this.status = status
@@ -88,38 +80,32 @@ class ModuleInstance extends InstanceBase {
 			})
 
 			this.socket.on('data', (data) => {
-<<<<<<< HEAD
-=======
 				this.setVariableValues({ mixer_response: data.toString() })
->>>>>>> 1f38d6b (version 0.1.2)
 				let received = data.toString()
-				if(this.loggedIn == false){
-					if(received.includes("Enter")){
-						if(this.passwordAsked)
+				if (this.loggedIn == false) {
+					if (received.includes("Enter")) {
+						if (this.passwordAsked)
 							this.updateStatus(InstanceStatus.AuthenticationFailure, "Wrong password")
 						else {
 							//Sending password
 							this.passwordAsked = true
 							setTimeout(() => {
 								let pass = Buffer.from(this.config.password + '\n', 'latin1')
-								if(this.socket.isConnected)
+								if (this.socket.isConnected)
 									this.socket.send(pass)
-							},150)
+							}, 150)
 						}
 					}
-					else if(received.includes("Welcome")){
+					else if (received.includes("Welcome")) {
 						this.updateStatus(InstanceStatus.Ok, "Logged in successfully")
-<<<<<<< HEAD
-=======
 						this.log('info', 'Logged in successfully')
->>>>>>> 1f38d6b (version 0.1.2)
 						this.loggedIn = true
 					}
 				} else {
 					//The ack and error arrive here
-					if(received.includes("ack"))
+					if (received.includes("ack"))
 						this.setVariableValues({ mixer_response: "ack" })
-					else if(received.includes("err"))
+					else if (received.includes("err"))
 						this.setVariableValues({ mixer_response: "err" })
 				}
 			})
